@@ -9,14 +9,37 @@ import comparisons.AreaCompare;
 public class Sorting {
 	public static void main(String args[]) {
 		
-		Shape[] mylist = new Shape[3];
-		Shape cone = (Shape) new Cone(50, 25);
-		Shape pyramid = (Shape) new Pyramid(30, 15);
-		Shape squareprism = (Shape) new SquarePrism(100, 55);
+		Shape[] mylist = new Shape[4];
+		Shape cone = (Shape) new Cone(50.50, 25);
+		Shape pyramid = (Shape) new Pyramid(30.20, 15);
+		Shape squareprism = (Shape) new SquarePrism(100.80, 55);
+		Shape cylinder = (Shape) new Cylinder(40.40, 55);
 		mylist[0] = cone;
 		mylist[1] = pyramid;
 		mylist[2] = squareprism;
+		mylist[3] =  cylinder;
+		
+		
 		System.out.println(Arrays.toString(mylist));
+		
+		
+		Sorting newSort = new Sorting();
+		newSort.insertSort(mylist);
+		
+		System.out.println(Arrays.toString(mylist));
+		
+		
+	}
+
+
+
+
+
+	
+	
+	public Sorting() {
+		
+		
 	}
 	
 	
@@ -25,27 +48,20 @@ public class Sorting {
 	
 	public void insertSort(Comparable<Shape>[] array) {
 		
-		for (int i = 1; i < array.length -1; i++) {
+		for (int i = 1 ; i < array.length -1; i++) {
 			
-			Comparable<Shape> current = array[i];
-			
-			
-			
-			
+			Shape current = (Shape) array[i];
 			int j = i;
-			while( j > 0 && (array[j - 1]).compareTo(met.invoke()) == 1) {
-				array[j] = array[j  - 1];
+			Shape behindJ = (Shape) array[j - 1];
+			while( j > 0 && (behindJ.getHeight()).compareTo(current.getHeight()) == -1) {
+				array[j] = array[j - 1];
 				j--;
-				array[j] = current;
+				
 			}
+			array[j] = current;
 		}
 		
-		for(int i = 0; i < array.length-1; i++) {
-			System.out.println(array[i]);
-		
-		
-		
-		}
 	}
-
 }
+
+

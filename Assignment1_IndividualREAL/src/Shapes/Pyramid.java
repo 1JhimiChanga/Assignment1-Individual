@@ -9,9 +9,7 @@ public class Pyramid extends Shape {
        this.side = side;
    }
 
-   public Pyramid(double height, double area, double volume) {
-       super(height, area, volume);
-   }
+
 
    @Override
    public double calcArea() {

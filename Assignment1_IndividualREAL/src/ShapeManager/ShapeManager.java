@@ -10,6 +10,10 @@ import java.util.StringTokenizer;
 
 import Shapes.Shape;
 
+/**
+ * @author Jimmy
+ *
+ */
 public class ShapeManager {
 	
 	private Shape[] shapeList;
@@ -86,7 +90,10 @@ public class ShapeManager {
 	}
 
 
-
+	
+	/**
+	 *This does string stuff
+	 */
 	@Override
 	public String toString() {
 		return "ShapeManager [shapeList=" + Arrays.toString(shapeList) + "]";
