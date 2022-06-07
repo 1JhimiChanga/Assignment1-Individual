@@ -5,6 +5,7 @@ public class OctagonalPrism extends Prism {
 	private double side;
 
 	public OctagonalPrism(double height, double side) {
+		this.height = height;
 		this.side = side;
 	}
 

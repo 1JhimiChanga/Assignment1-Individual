@@ -15,7 +15,7 @@ public class AppDriver {
 	
 	public static void main (String [] args) throws ClassNotFoundException, NoSuchMethodException, SecurityException, FileNotFoundException, InstantiationException, IllegalAccessException, IllegalArgumentException, InvocationTargetException {
 		ShapeManager newList = new ShapeManager("res/polyfor1.txt");
-		System.out.println();
+		newList.displayShape();
 		
 		
 //		for(int i = 0; i < args.length; i++ ) {

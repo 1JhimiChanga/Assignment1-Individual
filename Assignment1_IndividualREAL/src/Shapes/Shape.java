@@ -35,6 +35,11 @@ public abstract class Shape implements Comparable<Shape> {
 	
 	
 	
+	@Override
+	public String toString() {
+		return "Shape [height=" + height + ", area=" + area + ", volume=" + volume + "]";
+	}
+
 	public int compareTo(Shape sha1) {
 		if (this.getHeight() > sha1.getHeight()) {
 			return 1;

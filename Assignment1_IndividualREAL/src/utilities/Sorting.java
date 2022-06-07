@@ -48,16 +48,16 @@ public class Sorting {
 	
 	public void insertSort(Comparable<Shape>[] array) {
 		
-		for (int i = 1 ; i < array.length -1; i++) {
+		for (int i = 1 ; i < array.length; i++) {
 			
 			Shape current = (Shape) array[i];
 			int j = i;
 			Shape behindJ = (Shape) array[j - 1];
-			while( j > 0 && (behindJ.getHeight()).compareTo(current.getHeight()) == -1) {
+			while( j > 0 && new Double(behindJ.getHeight()).compareTo(current.getHeight()) == -1) {
 				array[j] = array[j - 1];
 				j--;
-				
 			}
+			
 			array[j] = current;
 		}
 		
