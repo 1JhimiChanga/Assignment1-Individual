@@ -25,32 +25,22 @@ public class Cylinder extends Shape {
 		super(height, area, volume);
 		
 	}
-	public double getRadius() {
-		return radius;
-	}
-	public void setRadius(double radius) {
-		this.radius = radius;
-	}
+
 	@Override
-	public double getArea() {
+	public double calcArea() {
+		double num = Math.PI * Math.pow(radius, 2);
+		this.area = num;
 		return this.area;
 	}
+	
+	
 	@Override
-	public void setArea(double area) {
-		double num = Math.PI * Math.pow(radius, 2);
-		this.area = num;	
-		
-	}
-	@Override
-	public double getVolume() {
-		return this.volume;
-	}
-	@Override
-	public void setVolume(double volume) {
+	public double calcVolume() {
 		double num = Math.PI * Math.pow(radius,2) * height;
 		this.volume = num;
-		
+		return this.volume;
 	}
+
 	
 
 }

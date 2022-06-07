@@ -14,24 +14,20 @@ public class Pyramid extends Shape {
    }
 
    @Override
-   public double getArea() {
+   public double calcArea() {
+	   double num = Math.pow(side, 2);
+       this.area = num;
        return this.area;
    }
 
-   @Override
-   public void setArea(double area) {
-       double num = Math.pow(side, 2);
-       this.area = num;
-   }
+   
 
    @Override
-   public double getVolume() {
+   public double calcVolume() {
+	   double num = (1.0/3.0) * (Math.pow(side, 2)) * height;
+       this.volume = num;
        return this.volume;
    }
 
-   @Override
-   public void setVolume(double volume) {
-       double num = (1.0/3.0) * (Math.pow(side, 2)) * height;
-       this.volume = num;
-   }
+
 } 

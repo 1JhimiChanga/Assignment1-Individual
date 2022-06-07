@@ -10,6 +10,7 @@ public abstract class Shape implements Comparable<Shape> {
 	}
 	
 	public Shape(double height, double area, double volume) {
+	
 		this.height = height;
 		this.area = area;
 		this.volume = volume;
@@ -23,13 +24,13 @@ public abstract class Shape implements Comparable<Shape> {
 		this.height = height;
 	}
 
-	public abstract double getArea();
+	public abstract double calcArea();
 
-	public abstract void setArea(double area);
 
-	public abstract double getVolume();
 
-	public abstract void setVolume(double volume);
+	public abstract double calcVolume();
+
+	
 		
 	
 	

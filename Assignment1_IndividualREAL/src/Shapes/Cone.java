@@ -13,27 +13,19 @@ public class Cone extends Shape {
 	}
 
 	@Override
-	public double getArea() {
+	public double calcArea() {
+		 double newArea = Math.PI * Math.pow(radius, 2);
+		 this.area = newArea;
 		 return this.area;
 	}
 
-	@Override
-	public void setArea(double area) {
-		double newArea = Math.PI * Math.pow(radius, 2);
-		this.area = newArea;
-		
-	}
 
 	@Override
-	public double getVolume() {
+	public double calcVolume() {
+		double newVol = (1.0/3.0) * Math.PI * Math.pow(radius, 2) * height;
+		this.volume = newVol;
 		return this.volume;
 	}
 
-	@Override
-	public void setVolume(double volume) {
-		double newVol = (1.0/3.0) * Math.PI * Math.pow(radius, 2) * height;
-		this.volume = newVol;
-		
-	}
 
 }

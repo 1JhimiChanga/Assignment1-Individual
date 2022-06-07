@@ -10,29 +10,21 @@ public class PentagonalPrism extends Prism {
 	}
 
 	@Override
-	public double getArea() {
-		// TODO Auto-generated method stub
-		return this.area;
-	}
-
-	@Override
-	public void setArea(double area) {
+	public double calcArea() {
 		double degrees = Math.toRadians(54);
 		double newArea = (5 * Math.pow(side, 2) * Math.tan(degrees)) / 4;
 		this.area = newArea;
-		
+		return this.area;
 	}
 
+
+
 	@Override
-	public double getVolume() {
+	public double calcVolume() {
+		double newVol = this.area * height;
+		this.volume = newVol;
 		return this.volume;
 	}
 
-	@Override
-	public void setVolume(double volume) {
-		double newVol = this.area * height;
-		this.volume = newVol;
-		
-	}
 
 }
