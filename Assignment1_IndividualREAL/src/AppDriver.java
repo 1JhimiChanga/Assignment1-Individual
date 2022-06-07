@@ -7,7 +7,7 @@ import java.sql.Array;
 import java.util.Scanner;
 import java.util.StringTokenizer;
 
-import Shapes.ShapeManager;
+import ShapeManager.ShapeManager;
 
 public class AppDriver {
 
